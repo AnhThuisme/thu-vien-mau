@@ -4,24 +4,28 @@ const books = [
     author: "Tô Hoài",
     category: "Văn học",
     year: 1941
+    namxuatban: 2010
   },
   {
     title: "Tuổi Thơ Dữ Dội",
     author: "Phùng Quán",
     category: "Văn học",
     year: 1988
+    namxuatban: 2010
   },
   {
     title: "Đắc Nhân Tâm",
     author: "Dale Carnegie",
     category: "Kỹ năng",
     year: 1936
+    namxuatban: 2010
   },
   {
     title: "Clean Code",
     author: "Robert C. Martin",
     category: "Công nghệ",
     year: 2008
+    namxuatban: 2010
   }
 ];
 
@@ -39,7 +43,8 @@ function renderBooks(keyword = "") {
       <h2>${book.title}</h2>
       <p>Tác giả: ${book.author}</p>
       <p>Thể loại: ${book.category}</p>
-      <p>Năm xuất bản: ${book.year}</p>
+      <p>Năm sáng tác: ${book.year}</p>
+      <p>Năm xuất bản: ${book.namxuatban}</p>
     </article>
   `).join("");
 
